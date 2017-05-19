@@ -44,6 +44,7 @@ module CuckooFilter
 
     def self.make(item)
       Fnv::Hash.fnv_1a(item, size: 32)
+      # FNV.new.fnv1a_32(item)
     end
   end
 end
